@@ -1,7 +1,7 @@
 ## Curso de desenvolvimento WEB
 
 Cenário
-Criação de uma plataforma para ensino online. Nesta plataforma, os usuários terão a possibilidade de cadastrar cursos e realizar a matrícula de alunos. Esta aplicação será construída em React, por isso é necessário um backend headless.
+Criação de uma plataforma para ensino online. Nesta plataforma, os usuários terão a possibilidade de cadastrar cursos e realizar a matrícula de alunos.
 
 Requisitos
 Um aluno pode ser matriculado em mais de um curso.
