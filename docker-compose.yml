@@ -28,6 +28,8 @@ services:
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
     ports:
       - '3306:3306'
+    security_opt:
+      - seccomp:unconfined  
     volumes:
       - './db/data:/var/lib/mysql'
       - './db/my.cnf:/etc/mysql/conf.d/my.cnf'
