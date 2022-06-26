@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +14,7 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="<?=$hosted;?>/assets/dist/css/adminlte.min.css">
 </head>
+
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
@@ -22,11 +23,11 @@
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
-      <p class="login-box-msg">Sign in to start your session</p>
+      <p class="login-box-msg">Entre com suas credenciais:</p>
 
-      <form action="<?=$hosted;?>/view/index.php" method="post">
+      <form action="" method="post" id="login">
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email">
+          <input type="email" class="form-control" requeired id="lg_email" placeholder="Email">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -34,7 +35,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" class="form-control" id="lg_password" placeholder="Password">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -42,18 +43,17 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-8">
-            <div class="icheck-primary">
-              
-            </div>
-          </div>
+          <div class="col-8"></div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+            <button type="button" id="bt_entrar" class="btn btn-primary btn-block">Entrar</button>
           </div>
           <!-- /.col -->
         </div>
       </form>
+      <div class="col-13" id="ers"> 
+        <ul id="erros_frm"></ul>
+      </idv>
   </div>
 </div>
 <!-- /.login-box -->
@@ -64,5 +64,7 @@
 <script src="<?=$hosted;?>/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="<?=$hosted;?>/assets/dist/js/adminlte.min.js"></script>
+<!-- java script -->
+<script src="<?=$hosted;?>/js/login.js"></script>
 </body>
 </html>

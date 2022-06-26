@@ -1,7 +1,12 @@
 <?php 
+require_once("../config/valida.php");
 require_once("../config/main.php");
 require_once("../config/mnutop.php");
 require_once("../config/menu.php");
+require_once("../config/modals.php");
+require_once("../model/recordset.php");
+//$fn = new functions();
+$rs = new recordset();
 ?>
  
   <!-- Content Wrapper. Contains page content -->
@@ -108,9 +113,9 @@ require_once("../config/footer.php");
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
+<script src="<?=$hosted;?>/assets/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="<?=$hosted;?>/assets/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button)

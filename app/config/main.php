@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <?php
   date_default_timezone_set('America/Sao_paulo');
   error_reporting(E_ALL & E_NOTICE & E_USER_WARNING);
   $hosted = "http://localhost:85";
-  //session_start();
+  session_start();
   ?>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
