@@ -27,6 +27,9 @@
   <link rel="stylesheet" href="<?=$hosted;?>/assets/dist/css/adminlte.min.css">
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="<?=$hosted;?>/assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="<?=$hosted;?>/assets/plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="<?=$hosted;?>/assets/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="<?=$hosted;?>/assets/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
